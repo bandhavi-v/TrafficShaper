@@ -1,0 +1,23 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/stys.css') }}">
+</head>
+<body style="background-color:#EAFAF1">
+<form action="bouip" method="post">
+  <fieldset>
+  <legend><big><b>&nbsp Block/Unblock Traffic:&nbsp<b></big></legend>
+  <div class="p1">
+    <label style="font-size:20px"><b>IP Address:</b></label>
+    <input type="text" placeholder="Enter shaper IP Address" name="ip" required>
+    <br \>
+    <label style="font-size:22px"><b>Action:</b></label>
+    <input type="text" placeholder="block or unblock" name="action" required>
+  <br \>
+  <label style="font-size:22px"><b>System IP Address:</b></label>
+    <input type="text" placeholder="Enter system IP Address to perform action" name="fip" required>
+    <button type="submit"> Apply Traffic filter</button>
+    </div>
+   </fieldset>
+</form>
+</body>
+</html>
